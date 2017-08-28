@@ -1,0 +1,35 @@
+html, body {
+	height: 100%;
+}
+
+.container {
+	display: flex;
+	/*flex-direction: row-reverse;*/
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+	align-items: center;
+	justify-content: center;
+}
+
+.container > * {
+	max-width: 100%;
+}
+
+.child {
+	flex-basis: auto;
+	width: 40%;
+}
+
+.first {
+	background: blue;
+	order: 1;
+}
+
+.second {
+	background: #ccc;
+}
+
+.third {
+	background: red;
+	order: -1;
+}
